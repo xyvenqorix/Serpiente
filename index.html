@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serpiente 🐍</title>
+
+  <link rel="stylesheet" href="componet/style.css">
+</head>
+
+<body>
+
+<main class="game">
+
+  <header>
+    <h1>Serpiente <span>🐍</span></h1>
+
+    <div class="score">
+      <small>Puntuación</small>
+      <span id="score">0</span> ·
+      <span id="best">0</span> 🏆
+    </div>
+  </header>
+
+  <section class="board-wrap" aria-label="Tablero de juego">
+
+    <canvas id="board" width="600" height="600"></canvas>
+
+    <div class="message" id="message">
+      <strong id="headline">¿Listo?</strong>
+
+      <p id="subtitle">
+        Come las frutas y no choques.
+      </p>
+
+      <button id="start">
+        Jugar
+      </button>
+    </div>
+
+  </section>
+
+  <div class="controls" aria-label="Controles táctiles">
+
+    <button class="up" data-dir="up">▲</button>
+
+    <button class="left" data-dir="left">◀</button>
+
+    <button class="down" data-dir="down">▼</button>
+
+    <button class="right" data-dir="right">▶</button>
+
+  </div>
+
+  <div class="footer">
+
+    <span class="keys">
+      Usa
+      <kbd>↑</kbd>
+      <kbd>↓</kbd>
+      <kbd>←</kbd>
+      <kbd>→</kbd>
+      o
+      <kbd>WASD</kbd>
+    </span>
+
+    <span>
+      Récord guardado en este navegador
+    </span>
+
+  </div>
+
+</main>
+
+<script src="componet/script.js"></script>
+
+</body>
+</html>
